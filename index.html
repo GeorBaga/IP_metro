@@ -9,46 +9,17 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:'Inter',sans-serif;
-background: radial-gradient(circle at 20% 20%, #2a1e5c, #0f0c29 60%);
+background: radial-gradient(circle at 20% 20%, #2a1e5c, #0f0c29 70%);
 color:white;
-line-height:1.6;
+line-height:1.7;
 }
 
 section{
-padding:100px 10%;
-position:relative;
-}
-
-h1{
-font-size:56px;
-font-weight:800;
-margin-bottom:25px;
-max-width:900px;
-}
-
-h2{
-font-size:40px;
-font-weight:700;
-margin-bottom:40px;
-}
-
-h3{
-font-size:22px;
-margin-bottom:15px;
-}
-
-p{
-opacity:0.9;
-font-weight:300;
+padding:100px 12%;
 }
 
 .hero{
@@ -56,77 +27,76 @@ height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
-background: linear-gradient(120deg,#0f0c29,#302b63,#24243e);
+background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
 }
 
-.subtitle{
-font-size:20px;
-opacity:0.7;
-max-width:600px;
+h1{
+font-size:56px;
+font-weight:800;
+max-width:900px;
+margin-bottom:30px;
+}
+
+h2{
+font-size:38px;
+margin-bottom:40px;
+}
+
+h3{
+font-size:22px;
+margin-bottom:15px;
+color:#caa8ff;
+}
+
+p{
+font-weight:300;
+opacity:0.9;
 }
 
 .glass{
-background: rgba(255,255,255,0.05);
+background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
-backdrop-filter: blur(15px);
 border-radius:20px;
 padding:40px;
-transition:0.3s ease;
+margin-bottom:40px;
+backdrop-filter:blur(15px);
+transition:0.3s;
 }
 
 .glass:hover{
-transform:translateY(-5px);
-box-shadow:0 0 40px rgba(160,120,255,0.3);
+transform:translateY(-6px);
+box-shadow:0 0 40px rgba(170,120,255,0.3);
 }
 
 .grid{
 display:grid;
-grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
 .image-side{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:60px;
 align-items:center;
 }
 
 .image-side img{
 width:100%;
 border-radius:20px;
-box-shadow:0 0 40px rgba(0,0,0,0.6);
-}
-
-.timeline{
-display:flex;
-flex-wrap:wrap;
-gap:30px;
-}
-
-.timeline-item{
-flex:1;
-min-width:250px;
-padding:30px;
-border-left:3px solid #a67cff;
-background:rgba(255,255,255,0.03);
-border-radius:15px;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
 }
 
 footer{
 text-align:center;
-padding:60px 10%;
+padding:60px;
 background:rgba(0,0,0,0.4);
 opacity:0.6;
 }
 
 @media(max-width:900px){
-.image-side{
-grid-template-columns:1fr;
-}
-h1{
-font-size:38px;
-}
+.image-side{grid-template-columns:1fr;}
+h1{font-size:38px;}
 }
 
 </style>
@@ -134,151 +104,102 @@ font-size:38px;
 
 <body>
 
-<!-- HERO -->
-
 <section class="hero">
 <h1>Перспектива обновления подвижных составов Московского метрополитена</h1>
-<p class="subtitle">Анализ эволюции вагонов метро от первых серий 1935 года до новейших поездов «Москва 2026».</p>
+<p>Исследование развития вагонов метро от 1935 года до новейших серий «Москва 2026».</p>
 </section>
-
-<!-- ВВЕДЕНИЕ -->
 
 <section>
-<h2>Введение — ключевая идея</h2>
-
-<div class="image-side">
-
+<h2>Введение</h2>
 <div class="glass">
 <p>
-Московский метрополитен является основой транспортной системы столицы. 
-Эволюция подвижного состава отражает развитие технологий, требований безопасности и уровня комфорта пассажиров.
-Обновление вагонов — это стратегическая инвестиция в будущее города.
+Московский метрополитен является основой транспортной системы столицы.
+Эволюция подвижного состава отражает развитие технологий,
+повышение требований к безопасности и рост уровня комфорта пассажиров.
+Обновление вагонов — стратегический шаг в развитии городской инфраструктуры.
 </p>
-</div>
-
-<img src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5">
-
 </div>
 </section>
 
-<!-- РАННИЕ ТИПЫ -->
-
 <section style="background:linear-gradient(120deg,#302b63,#24243e);">
-<h2>Глава I — ранние типы: А, Б, Г</h2>
+<h2>Глава I — Историческое развитие</h2>
 
 <div class="grid">
 
 <div class="glass">
 <h3>Тип А (1935)</h3>
-<p>Первые вагоны метро. Деревянная отделка, ручные двери, реостатная система управления. Исторический прорыв, но низкая энергоэффективность и безопасность.</p>
+<p>Первые вагоны Московского метро. Деревянная отделка, ручные двери, реостатная система управления. Исторический прорыв своего времени.</p>
 </div>
 
 <div class="glass">
-<h3>Тип Б</h3>
-<p>Улучшенная тормозная система, повышенная надёжность. Сохранялись проблемы вентиляции и высокой массы.</p>
+<h3>Тип Б и Г</h3>
+<p>Улучшенная безопасность, первые шаги к автоматизации, переход к более прочным конструкциям.</p>
 </div>
 
 <div class="glass">
-<h3>Тип Г</h3>
-<p>Экспериментальная серия с элементами автоматизации. Переход к косвенной системе управления.</p>
+<h3>Тип Д и Е</h3>
+<p>Переход к цельнометаллическому кузову и автоматическим дверям. Массовое развитие метро в СССР.</p>
+</div>
+
+<div class="glass">
+<h3>81-717 («Номерной»)</h3>
+<p>Самая массовая серия. Надёжность и унификация, но высокий шум и отсутствие кондиционирования.</p>
 </div>
 
 </div>
 </section>
-
-<!-- 81-717 -->
 
 <section>
-<h2>Массовый стандарт — 81-717</h2>
+<h2>Глава II — Переход к современности</h2>
 
 <div class="image-side">
 
 <div class="glass">
+<h3>«Русич»</h3>
 <p>
-Самый массовый вагон в истории метро. Надёжность, унификация, ремонтопригодность.
-Однако — высокая шумность, отсутствие кондиционеров и устаревшая эргономика.
+Первый современный поезд нового поколения (2003).
+Сквозной проход, улучшенный дизайн, новые технологии.
+Подготовил платформу для серии «Москва».
 </p>
 </div>
-
-<img src="https://images.unsplash.com/photo-1558008258-3256797b43f3">
-
-</div>
-</section>
-
-<!-- РУСИЧ -->
-
-<section style="background:linear-gradient(120deg,#302b63,#24243e);">
-<h2>Переходная модель — «Русич»</h2>
-
-<div class="image-side">
 
 <img src="https://images.unsplash.com/photo-1589987607627-22c0f74f2a1f">
 
-<div class="glass">
-<p>
-Первый современный поезд нового поколения (2003).
-Сквозной проход, улучшенная планировка, новые технологии.
-Подготовил основу для появления серии «Москва».
-</p>
-</div>
-
 </div>
 </section>
 
-<!-- МОСКВА -->
-
-<section>
+<section style="background:linear-gradient(120deg,#302b63,#24243e);">
 <h2>Современные серии «Москва»</h2>
 
 <div class="grid">
 
 <div class="glass">
 <h3>Москва 2019</h3>
-<p>Сквозной проход, USB-розетки, климат-контроль, ЖК-панели.</p>
+<p>Сквозной проход, USB-розетки, климат-контроль, информационные панели.</p>
 </div>
 
 <div class="glass">
 <h3>Москва 2020</h3>
-<p>Широкий проход 1,6 м, сенсорные панели, повышенная шумоизоляция.</p>
+<p>Широкий переход 1,6 м, сенсорные экраны, высокая шумоизоляция.</p>
 </div>
 
 <div class="glass">
 <h3>Москва 2024–2026</h3>
-<p>Прозрачные перегородки, улучшенные кондиционеры, современный дизайн и плавность хода.</p>
+<p>Прозрачные перегородки, мощный климат-контроль, улучшенная эргономика.</p>
 </div>
 
 </div>
 </section>
 
-<!-- ЗАКЛЮЧЕНИЕ -->
-
-<section style="background:linear-gradient(120deg,#302b63,#24243e);">
-<h2>Заключение и выводы</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<h3>1935</h3>
-<p>Тип А — начало истории.</p>
+<section>
+<h2>Заключение</h2>
+<div class="glass">
+<p>
+Обновление подвижного состава повышает безопасность, комфорт и энергоэффективность.
+Современные поезда формируют новый стандарт качества городского транспорта.
+Гипотеза исследования подтверждена.
+</p>
 </div>
-
-<div class="timeline-item">
-<h3>1975</h3>
-<p>81-717 — массовый стандарт.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2003</h3>
-<p>Русич — переход к новому поколению.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2026</h3>
-<p>Москва — технологический этап будущего.</p>
-</div>
-
-</div>
-
 </section>
 
 <footer>
